@@ -11,7 +11,6 @@ export const useRowsStore = defineStore("rows", () => {
         "https://rickandmortyapi.com/api/character"
       );
       rows.value = response.data.results;
-      console.log(rows.value);
     } catch (error) {
       console.error("Ошибка при загрузке данных:", error);
     }
